@@ -1,0 +1,16 @@
+<svg width="22" height="22" viewBox="0 0 22 22" xmlns="http://www.w3.org/2000/svg">
+  <!--
+    macOS "template image" rule: pure black shapes on transparent background.
+    macOS itself recolors this automatically for light/dark mode & menu bar states.
+    Keep it extremely simple - this renders at ~16-22pt.
+  -->
+  <path d="M 6 3
+           L 6 17
+           L 9.2 14
+           L 11.4 18.3
+           L 13.2 17.4
+           L 11 13.2
+           L 15 13.2
+           Z"
+        fill="#000000"/>
+</svg>

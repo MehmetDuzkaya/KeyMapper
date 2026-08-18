@@ -1,0 +1,49 @@
+<svg width="1024" height="1024" viewBox="0 0 1024 1024" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#4F46E5"/>
+      <stop offset="100%" stop-color="#7C3AED"/>
+    </linearGradient>
+    <linearGradient id="cursorGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF"/>
+      <stop offset="100%" stop-color="#E5E7EB"/>
+    </linearGradient>
+    <filter id="softShadow" x="-50%" y="-50%" width="200%" height="200%">
+      <feDropShadow dx="0" dy="14" stdDeviation="18" flood-color="#000000" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- macOS squircle background -->
+  <rect x="0" y="0" width="1024" height="1024" rx="228" ry="228" fill="url(#bg)"/>
+
+  <!-- subtle inner glow ring -->
+  <rect x="24" y="24" width="976" height="976" rx="206" ry="206" fill="none" stroke="#FFFFFF" stroke-opacity="0.08" stroke-width="2"/>
+
+  <!-- Four directional arrow-key hints, arranged like WASD/arrow cluster, faint -->
+  <g fill="#FFFFFF" fill-opacity="0.16">
+    <!-- up -->
+    <rect x="560" y="300" width="120" height="120" rx="24"/>
+    <!-- down -->
+    <rect x="560" y="440" width="120" height="120" rx="24"/>
+    <!-- left -->
+    <rect x="430" y="440" width="120" height="120" rx="24"/>
+    <!-- right -->
+    <rect x="690" y="440" width="120" height="120" rx="24"/>
+  </g>
+
+  <!-- Main cursor arrow, large, centered-left -->
+  <g filter="url(#softShadow)">
+    <path d="M 300 230
+             L 300 700
+             L 400 610
+             L 470 760
+             L 540 730
+             L 470 580
+             L 600 580
+             Z"
+          fill="url(#cursorGrad)"
+          stroke="#312E81"
+          stroke-width="10"
+          stroke-linejoin="round"/>
+  </g>
+</svg>
